@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start nav -->
+    <div class="vertical-nav bg-white" id="sidebar">
+      <div class="py-4 px-3 mb-4 bg-light">
+        <div class="media d-flex align-items-center">
+          <img src="" alt="" />
+        </div>
+        <div class="media-body">
+          <h4 class="m-0">Olivia</h4>
+          <p class="font-weight-normal text-muted mb-0">web developer</p>
+        </div>
+      </div>
+      <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
+        Dashbroad
+      </p>
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> About </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> Services </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> Gallery </a>
+        </li>
+      </ul>
+      <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
+        Charts
+      </p>
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> About </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> Services </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark bg-light"> Gallery </a>
+        </li>
+      </ul>
+    </div>
+    <!-- end nav -->
+
+    <!-- start content -->
+    <div class="page-content p-5" id="content">
+      <button
+        id="sidebarCollapse"
+        type="button"
+        class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"
+      >
+        Toggle
+      </button>
+      <h2 class="display-4 text-white">Bootstrap vertical nav</h2>
+      <p class="lead text-white mb-0">
+        Build a fixed sidebar using bootstrap 4 vertical nav
+      </p>
+      <div class="separator"></div>
+      <div class="row text-white">
+        <div class="col-lg-7">
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+            dicta veritatis consectetur error vero libero et assumenda ipsa
+            perferendis? Pariatur, quia ratione. Inventore earum optio vel quas
+            ullam illo dolore!
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+            dicta veritatis consectetur error vero libero et assumenda ipsa
+            perferendis? Pariatur, quia ratione. Inventore earum optio vel quas
+            ullam illo dolore!
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+            dicta veritatis consectetur error vero libero et assumenda ipsa
+            perferendis? Pariatur, quia ratione. Inventore earum optio vel quas
+            ullam illo dolore!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
+<style>
+  body {
+    background: #599fd9;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  }
+
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #ffffff;
+  }
+
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-gray {
+    color: #aaaaaa;
+  }
+
+  .nav-link {
+    text-transform: capitalize;
+  }
+  .nav-link:hover {
+    background-color: #f3f2f2;
+  }
+  .text-primary {
+    color: #7579e7 !important;
+  }
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      width: calc(100% - 17rem);
+      margin-left: 17rem;
+    }
+  }
+</style>
+<script>
+  $(function () {
+    $("#sidebarCollapse").on("click", function () {
+      $("#sidebar, #content").toggleClass("active");
+    });
+  });
+</script>
